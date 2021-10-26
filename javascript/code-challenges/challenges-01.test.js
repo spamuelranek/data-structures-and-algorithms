@@ -148,6 +148,24 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
+  let localArray = [];
+  arr.forEach(element => {
+    if((element % 3 === 0) && (element % 5 === 0)){
+      localArray.push('Fizz Buzz');
+    }
+    else if((element % 3 !== 0) && (element % 5 === 0)){
+      localArray.push('Buzz');
+    }
+    else if((element % 3 === 0) && (element % 5 !== 0)){
+      localArray.push('Fizz');
+    }
+    else if((element % 3 !== 0) && (element % 5 !== 0)){
+      localArray.push(element);
+    }
+
+  });
+  console.log(localArray);
+  return localArray;
   // Solution code here...
 };
 
@@ -202,7 +220,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
