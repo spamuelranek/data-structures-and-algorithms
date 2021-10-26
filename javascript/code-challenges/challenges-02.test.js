@@ -106,16 +106,16 @@ For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 
 const evenOdd = (arr) => {
   return (
-      arr.map(element => {
-          if(isNaN(element) === true ){
-            return 'N/A';
-          }
-          else if(element % 2 > 0){
-            return 'odd';
-          }
-          else if(element){
-            return 'even';
-          }
+    arr.map(element => {
+      if(isNaN(element) === true ){
+        return 'N/A';
+      }
+      else if(element % 2 > 0){
+        return 'odd';
+      }
+      else if(element){
+        return 'even';
+      }
     })
   );
 
@@ -164,9 +164,10 @@ const snorlaxAbilities = {
   weight: 4600,
 };
 
-const extractAbilities = (arr) => {
+const extractAbilities = (arr) => arr.map(element => (element.ability.name));
+
   // Solution code here...
-};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 10 - Stretch Goal
@@ -306,14 +307,14 @@ describe('Testing challenge 8', () => {
   });
 });
 
-xdescribe('Testing challenge 9', () => {
+describe('Testing challenge 9', () => {
   test('It should return an array containing only the ability names', () => {
     expect(extractAbilities(snorlaxAbilities.abilities)).toStrictEqual(['gluttony', 'cute charm', 'immunity']);
     expect(extractAbilities(snorlaxAbilities.abilities).length).toStrictEqual(3);
   });
 });
 
-xdescribe('Testing challenge 10', () => {
+describe('Testing challenge 10', () => {
   test('It should return an array containing objects with name and total values', () => {
     expect(extractStats(snorlaxStats.stats)).toStrictEqual([
       { name: 'speed', total: 35, },
