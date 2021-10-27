@@ -9,7 +9,6 @@ Write a function called addTwo that takes in an array and adds two to every valu
 const addTwo = (arr) => {
   let localArray =[];
   arr.forEach(element =>(localArray.push(element + 2)));
-
   return localArray;
   // Solution code here...
 };
