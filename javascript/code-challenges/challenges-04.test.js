@@ -94,22 +94,7 @@ Here is an example of the input:
 ];
 ------------------------------------------------------------------------------------------------ */
 
-const sortByPrice = (arr) =>arr.sort((a,b)=> a.price -b.price);
-//   let localArray = [];
-//   let marco = arr.map(element => element.price);
-//   let traveler = marco.sort((a,b) => a-b);
-//   traveler.map(element => {
-//     arr.map(arrElement => {
-//       if(element === arrElement.price){
-//         localArray.push(arrElement);
-//       }
-//     });
-//   });
-//   console.log(localArray);
-//   return localArray;
-// };
-
-// arr.map(element => element.price.sort((a,b) => a-b));
+const sortByPrice = (arr) =>arr.sort((a,b)=> a.price - b.price);
 
   // Solution code here...
 
