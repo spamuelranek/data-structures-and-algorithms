@@ -94,27 +94,20 @@ Here is an example of the input:
 ];
 ------------------------------------------------------------------------------------------------ */
 
-const sortByPrice = (arr) =>{
-  let localArray = [];
-  let marco = arr.map(element => element.price);
-  let traveler = marco.sort((a,b) => a-b);
-  traveler.map(element => {
-    arr.map(arrElement => {
-      if(element === arrElement.price){
-        localArray.push(arrElement);
-      }
-    });
-  });
-  // for(let i = 0; i<traveler.length; i++){
-  //   for(let u = 0; u<arr.length; u++){
-  //     if(traveler[i]===arr[u].price){
-  //       localArray.push(arr[u]);
-  //     }
-  //   }
-  // }
-  console.log(localArray);
-  return localArray;
-};
+const sortByPrice = (arr) =>arr.sort((a,b)=> a.price -b.price);
+//   let localArray = [];
+//   let marco = arr.map(element => element.price);
+//   let traveler = marco.sort((a,b) => a-b);
+//   traveler.map(element => {
+//     arr.map(arrElement => {
+//       if(element === arrElement.price){
+//         localArray.push(arrElement);
+//       }
+//     });
+//   });
+//   console.log(localArray);
+//   return localArray;
+// };
 
 // arr.map(element => element.price.sort((a,b) => a-b));
 
