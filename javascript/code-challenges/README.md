@@ -1,5 +1,5 @@
 ## Helpful Students
-- Chloe Nott helped find a even cleaner solution on challenge 6
+- Chloe Nott helped find a even cleaner solution on challenge 6 for challenge-04
 
 
 # Code Challenges
