@@ -137,8 +137,6 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) =>{
   let strArray = str.split('');
-  // let localArray =[];
-  // strArray.map(element => localArray.push(element));
   let answer = strArray.reduce((acc,curr) => {
     acc = curr + acc;
     console.log(acc);
