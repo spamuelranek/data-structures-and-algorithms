@@ -102,7 +102,6 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   let regex = /(world)/g;
-  console.log('cool');
   return regex.test(input);
   // Solution code here...
 };
@@ -116,9 +115,12 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  let regex = /[A-Z][a-z]+]/g;
-  let array = str.match(regex);
-  console.log(array);
+  let regex = /[A-Z][a-z]+/g;
+  let array = [];
+
+  if(str.match(regex)){
+    array=str.match(regex);
+  }
   return array;
   // Solution code here...
 };
@@ -130,6 +132,16 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
+  let regex = /^[A-J][a-z]+/g;
+  let array = [];
+  arr.map(element => {
+    if(element.match(regex)){
+      array.push(element);
+    }
+
+  });
+  console.log(array);
+  return array;
   // Solution code here...
 };
 
@@ -251,7 +263,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should only return words that begin with a capital letter', () => {
     const capitalResult = isCapitalized('We only want to Return the Words that begin With a capital Letter');
 
@@ -264,7 +276,7 @@ xdescribe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   let cities = ['Cleveland', 'San Diego', 'Birmingham', 'Seattle', 'Miami', 'New York City', 'Omaha', 'Portland', 'Austin', 'Boston', 'Newport Beach', 'Hoboken'];
 
   test('It should return the cities whose names begin with the letters A through J', () => {
