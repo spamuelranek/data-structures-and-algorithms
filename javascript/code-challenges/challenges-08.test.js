@@ -102,7 +102,6 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   let regex = /(world)/g;
-  console.log(`${input} : ${regex.test(input)}`);
   return regex.test(input);
   // Solution code here...
 };
@@ -239,7 +238,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return true if the input contains the word school in lower case', () => {
     expect(containsWorld('hello world')).toBe(true);
   });
@@ -251,7 +250,7 @@ xdescribe('Testing challenge 4', () => {
   });
 });
 
-describe('Testing challenge 5', () => {
+xdescribe('Testing challenge 5', () => {
   test('It should only return words that begin with a capital letter', () => {
     const capitalResult = isCapitalized('We only want to Return the Words that begin With a capital Letter');
 
