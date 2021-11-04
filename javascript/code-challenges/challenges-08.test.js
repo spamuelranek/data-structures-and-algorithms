@@ -102,6 +102,7 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   let regex = /(world)/g;
+  console.log('cool');
   return regex.test(input);
   // Solution code here...
 };
