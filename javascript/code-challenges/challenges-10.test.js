@@ -187,15 +187,6 @@ const battleship = (board, row, col) => {
   else{
     return 'miss';
   }
-  // let marco = board;
-  // for(let i = 0; i < board[0].length; i++){
-  //   for(let u = 0; u < board.length; u++){
-  //     if(u===row && i===col){
-  //       board
-  //     }
-  //   }
-
-  // }
   //  Solution code here...
 };
 
