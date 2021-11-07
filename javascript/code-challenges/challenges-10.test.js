@@ -158,6 +158,8 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
+  console.log(arr[2].items[1].quantity);
+  return arr[2].items[1].quantity;
   // Solution code here...
 };
 
@@ -317,7 +319,7 @@ describe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should return the number 24', () => {
     expect(howManyTreats(errands)).toStrictEqual(24);
   });
