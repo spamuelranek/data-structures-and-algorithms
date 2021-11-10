@@ -73,7 +73,7 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 ------------------------------------------------------------------------------------------------ */
 
 const validateEmail = (email) => {
-  let regex =/\w+[.]\w+[@]\w+\S\w{3}\b|\w+[@]\w+\S\w{3}\b/g;
+  let regex =/^\w+[.]\w+[@]\w+\S\w{3}\b|^\w+[@]\w+[.]\w{3}\b/g;
   return regex.test(email);
   // Solution code here...
 };
@@ -100,7 +100,7 @@ Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
 const validatePhoneNumber = (phoneNumber) => {
-  let regex = /\b(\d{3})[) -]*(\d{3})[- ]?(\d{4}\b)$/g;
+  let regex = /[(]{1}\d{3}[)]{1}[ -]*\d{3}[- ]?\d{4}\b$|^\d{3}[ -]*\d{3}[- ]?\d{4}\b$/g;
   return regex.test(phoneNumber);
   // Solution code here...
 };
@@ -172,7 +172,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should match a basic email', () => {
     expect(validateEmail('joe@codefellows.com')).toBeTruthy();
   });
