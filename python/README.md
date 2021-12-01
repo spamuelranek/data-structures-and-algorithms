@@ -1,3 +1,12 @@
+# Table of Contents
+[array reverse](code_challenges/array_reverse/README.md)
+[array insert shift](code_challenges/array_insert_shift/README.md)
+
+
+
+
+
+
 # Data Structures and Algorithms
 
 ## Language: `Python`
@@ -74,3 +83,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - **Run every possible test** - `pytest`
 - **Run filtered tests** - `pytest -k some_filter_text`
 - **Run in watch mode** - `ptw` or `pytest-watch`
+
