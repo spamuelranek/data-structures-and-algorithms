@@ -2,10 +2,7 @@
 - [array reverse](code_challenges/array_reverse/README.md)
 - [array insert shift](code_challenges/array_insert_shift/README.md)
 - [array binary search](code_challenges/array__binary_search/README.md)
-
-
-
-
+- [linked list](linked_list/README.md)
 
 
 # Data Structures and Algorithms
