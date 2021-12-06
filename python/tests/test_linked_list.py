@@ -53,7 +53,8 @@ def test_str():
     linked_list.insert("somber trees only bloom in the winter")
     linked_list.insert("trampling on broken flowers only hurts me")
     actual = str(linked_list)
-    expected = "{the truest true} -> {somber trees only bloom in the winter} -> {trampling on broken flowers only hurts me} -> NULL"
+    expected = "{trampling on broken flowers only hurts me} -> {somber trees only bloom in the winter} -> {the truest true} -> NULL"
+    assert actual == expected
 
 
 
