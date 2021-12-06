@@ -13,3 +13,15 @@
 ## API
 - No Apis used
 
+## Challenge
+- Create methods to insert nodes into an exisiting linked list
+
+## Approach & Efficiency
+- Followed the examples from class and the Code Fellows reading about linked lists as inspriation
+- insert_before has O(N)
+- insert_after has O(N)
+- append has O(N)
+
+## API
+- No Apis used
+
