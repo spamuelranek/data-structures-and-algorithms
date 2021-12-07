@@ -28,3 +28,15 @@
 ## API
 - No Apis used
 
+# kth position of linked list
+
+## Challenge
+- Create methods to return the value of the kth node in a list
+
+## Approach & Efficiency
+- Worked from the idea of creating my own index of the list and then using it to move a certain amount through the linked list
+- kth_from_end has O(N)
+
+## API
+- No Apis used
+
