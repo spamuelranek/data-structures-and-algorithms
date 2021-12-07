@@ -9,7 +9,7 @@ class Node:
 
 class LinkedList:
     """
-    Put docstring here
+    Creates a node based list that has values and references to the following node
     """
 
     def __init__(self):
@@ -20,8 +20,6 @@ class LinkedList:
         node.next = self.head
         self.head = node
         return None
-
-
 
     def append(self, value):
         if self.head is None:
@@ -94,5 +92,25 @@ class LinkedList:
         output = output + "NULL"
         return output
 
+    def kth_from_end(self,kth_from_tail):
+        if kth_from_tail < 0:
+            raise ValueError("value needs to be greater than zero")
+
+        length = 0
+        current = self.head
+
+        while current.next:
+            length += 1
+            current = current.next
+
+        from_the_front = length - kth_from_tail
+        if from_the_front < 0:
+            raise ValueError("that position does not exist")
+
+        re_current = self.head
+        for node in range(from_the_front):
+            re_current = re_current.next
+
+        return re_current.value
 
 
