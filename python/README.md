@@ -3,6 +3,7 @@
 - [array insert shift](code_challenges/array_insert_shift/README.md)
 - [array binary search](code_challenges/array__binary_search/README.md)
 - [linked list](linked_list/README.md)
+- [zip linked lists]((code_challenges/linked_list_zip/README.md))
 
 
 # Data Structures and Algorithms
