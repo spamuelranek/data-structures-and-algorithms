@@ -4,6 +4,7 @@
 - [array binary search](code_challenges/array__binary_search/README.md)
 - [linked list](linked_list/README.md)
 - [zip linked lists]((code_challenges/linked_list_zip/README.md))
+- [stack and queues](code_challenges/stacks_and_queue/README.md)
 
 
 # Data Structures and Algorithms
