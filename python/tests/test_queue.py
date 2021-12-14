@@ -44,6 +44,19 @@ def test_multiple_en_q():
     expected = "Shrimp Company"
     assert actual == expected
 
+def test_multiple_en_q_even_more():
+    q = Queue()
+    q.enq("Bubba Gump")
+    q.enq("Shrimp Company")
+    q.enq("Blobby")
+    q.enq("Trommpping")
+    q.deq()
+    q.deq()
+    q.deq()
+    actual = q.peek()
+    expected = "Trommpping"
+    assert actual == expected
+
 def test_multiple_dn_q():
     q = Queue()
     q.enq("Bubba Gump")
