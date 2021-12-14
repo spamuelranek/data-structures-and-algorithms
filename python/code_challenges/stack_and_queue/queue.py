@@ -30,5 +30,6 @@ class Queue:
             self.rear = new_node
             self.front = new_node
         self.rear.next = new_node
+        self.rear = new_node
 
 

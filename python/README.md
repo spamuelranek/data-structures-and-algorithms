@@ -6,6 +6,7 @@
 - [zip linked lists]((code_challenges/linked_list_zip/README.md))
 - [stack and queues](code_challenges/stacks_and_queue/README.md)
 - [queue with stacks](code_challenges/stack_queue_pseudo/README.md)
+- [stack queue for animal shelter](code_challenges/stack_queue_animal_shelter/README.md)
 
 
 # Data Structures and Algorithms
