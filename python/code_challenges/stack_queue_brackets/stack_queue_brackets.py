@@ -13,21 +13,17 @@ def validate_brackets(string):
     modified_string = list(modified_string)
     dict_of_truth = {'{':'}','[':']','(':')'}
     open_stack = []
-    close_stack = []
-    index_number = 1
 
-    while modified_string:
-        bracket = modified_string.pop()
-        if bracket == '{' or bracket =='[' or bracket == '(':
-            open_stack.append((bracket,index_number))
-        elif bracket == '}' or bracket ==']' or bracket == ')':
-            close_stack.append((bracket,index_number))
 
-        index_number += 1
+    for bracket in modified_string:
+        if bracket in dict_of_truth:
+            open_stack.append(bracket)
+        elif bracket in dict_of_truth.values():
+            if not open_stack:
+                return False
 
-    while open_stack and close_stack:
-        if dict_of_truth[open_stack.pop()[0]] != close_stack.pop()[0] or open_stack.pop()[1] < close_stack.pop()[1]:
-            return False
+            if bracket != dict_of_truth[open_stack.pop()]:
+                return False
 
     return True
 

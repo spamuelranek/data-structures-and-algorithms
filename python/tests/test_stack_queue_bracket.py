@@ -39,3 +39,15 @@ def test_validate_brackets_false_weird():
     expected = False
     assert actual == expected
 
+def test_validate_brackets_class():
+    string = "({[]})"
+    actual = validate_brackets(string)
+    expected = True
+    assert actual == expected
+
+def test_validate_brackets_class_2():
+    string = "({()[]})"
+    actual = validate_brackets(string)
+    expected = True
+    assert actual == expected
+
