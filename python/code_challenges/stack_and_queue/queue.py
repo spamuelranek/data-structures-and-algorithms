@@ -26,9 +26,10 @@ class Queue:
 
     def enq(self,value):
         new_node = Node(value)
-        if not self.rear:
+        if not self.front:
             self.rear = new_node
             self.front = new_node
+            return
         self.rear.next = new_node
         self.rear = new_node
 
