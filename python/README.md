@@ -9,6 +9,7 @@
 - [stack queue for animal shelter](code_challenges/stack_queue_animal_shelter/README.md)
 - [stack queue brackets](code_challenges/stack_queue_brackets/README.md)
 - [trees](tree/README.md)
+- [tree breadth first](code_challenges/tree_breadth_first/README.md)
 
 
 # Data Structures and Algorithms
