@@ -20,3 +20,21 @@ def test_tree_breadth_first_tree():
     actual = tree_breadth_first_list(tree_try)
     expected = [10,5,15]
     assert actual == expected
+
+def test_is_tree_breadth_first_():
+    assert tree_breadth_first
+
+def test_tree_breadth_first_basic_tree_():
+    ten = NodeTwo(10)
+    tree_try = BinaryTree(ten)
+    actual = tree_breadth_first(tree_try)
+    expected = [10]
+    assert actual == expected
+
+def test_tree_breadth_first_tree_():
+    ten = NodeTwo(10,Node(5),Node(15))
+    tree_try = BinaryTree(ten)
+    actual = tree_breadth_first(tree_try)
+    expected = [10,15,5]
+    assert actual == expected
+

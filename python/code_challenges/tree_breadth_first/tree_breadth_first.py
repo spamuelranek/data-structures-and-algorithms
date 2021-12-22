@@ -26,20 +26,18 @@ def tree_breadth_first_list(tree):
     return return_list
 
 def tree_breadth_first(tree):
-    if not tree.root:
+    if tree.root is None:
         return "Tree is empty"
     first_into_queue = tree.root
     q = Queue()
     q.enq(tree.root)
-    # q.deq()
+
     return_list = []
-    print(q.front.value.left.value)
-    # print(q.front.next.value.left.value)
 
 
-    while not q.is_empty():
-        # print(q.peek().value)
+    while q.is_empty() is False:
         dequeue = q.deq()
+        print(dequeue.value)
         return_list.append(dequeue.value)
         # print(dequeue.left.value)
 
@@ -47,7 +45,5 @@ def tree_breadth_first(tree):
             q.enq(dequeue.left)
         if dequeue.right:
             q.enq(dequeue.right)
-
-
 
     return return_list

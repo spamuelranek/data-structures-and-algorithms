@@ -10,6 +10,7 @@
 - [stack queue brackets](code_challenges/stack_queue_brackets/README.md)
 - [trees](tree/README.md)
 - [tree breadth first](code_challenges/tree_breadth_first/README.md)
+- [tree fizz buzz](code_challenges/tree_fizz_buzz/README.md)
 
 
 # Data Structures and Algorithms

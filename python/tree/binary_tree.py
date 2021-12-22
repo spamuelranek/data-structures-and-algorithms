@@ -82,25 +82,7 @@ class BinaryTree:
 
         return move_in_list(self.root)
 
-    # def add_node(self, value):
-    #     # we want to add a node to the next available position
-    #     # also want to fill the level before moving to the next
-    #     # want to build a balancing tree
-    #     new_node = Node(value)
-    #     if not self.root:
-    #         self.root = new_node
-    #         return
 
-    #     def find_empty_location(root,node):
-
-    #         if root.left:
-    #             if root.right:
-    #                 return find_empty_location(root.left,node)
-    #             else:
-    #                 root.right = node
-
-    #         else:
-    #             root.left = node
 
 
 
