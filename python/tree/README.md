@@ -14,6 +14,9 @@
 ## Challenge: Add find Max value
 - Create a binary tree that has an max method and returns the value that is the greatest
 
+## Whiteboard
+![whiteboard](./find_max.png)
+
 ## Approach & Efficiency
 - Followed the examples from class as inspriation and worked with Branno Starnes and Joseph Streifelgit
 - pre order max finder has O(N) time complexity and a O(1) for space complexity.
