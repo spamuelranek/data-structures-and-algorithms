@@ -11,6 +11,7 @@
 - [trees](tree/README.md)
 - [tree breadth first](code_challenges/tree_breadth_first/README.md)
 - [tree fizz buzz](code_challenges/tree_fizz_buzz/README.md)
+- [insertion sort](sorts/insertion_sort/README.md)
 
 
 # Data Structures and Algorithms
