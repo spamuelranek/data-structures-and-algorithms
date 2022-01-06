@@ -3,7 +3,7 @@
 
 ## Approach & Efficiency
 - Followed the examples from class
-- insertion_sort has O(n) time complexity and a O(1) for space complexity.
+- insertion_sort has O(n^2) time complexity and a O(1) for space complexity.
 
 
 ## API
