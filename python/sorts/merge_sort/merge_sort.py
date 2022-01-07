@@ -26,14 +26,12 @@ def merge(left, right, arr):
         k = k + 1
 
     if i == len(left):
-        remaing_elements = len(right) - j
-        for index in range(remaing_elements):
-            right_modified_index = index + j
-            arr[k] = right[right_modified_index]
+        while j < len(right):
+            arr[k] = right[j]
+            j = j + 1
             k = k + 1
     else:
-        remaing_elements = len(left) - i
-        for index in range(remaing_elements):
-            left_modified_index = index + i
-            arr[k] = left[left_modified_index]
+        while i < len(left):
+            arr[k] = left[i]
+            i = i + 1
             k = k + 1
