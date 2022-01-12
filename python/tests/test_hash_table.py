@@ -6,7 +6,7 @@ def test_is_hash_table():
 
 def test_hash():
     make_hash = HashTable(10)
-    actual = make_hash.get_hash("cat")
+    actual = make_hash.hash("cat")
     expected = 2
     assert actual == expected
 
