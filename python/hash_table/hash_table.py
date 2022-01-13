@@ -43,17 +43,20 @@ class HashTable:
             self.buckets[hash_index].append({key:value})
 
 
-    def list_inclueds(self,key,definition):
+    def list_includes(self,key,definition):
         hash_index = self.hash(key)
+        value = False
         if self.buckets[hash_index] is not None:
             value = self.buckets[hash_index].includes(key,definition)
         return value
 
+
+
     def contains(self,key):
-        return self.list_inclueds(key,"contains")
+        return self.list_includes(key,"contains")
 
     def get(self,key):
-        return self.list_inclueds(key, "get")
+        return self.list_includes(key, "get")
 
 
 

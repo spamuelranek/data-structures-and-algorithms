@@ -16,6 +16,7 @@
 - [quick sort](sorts/quick_sort/README.md)
 - [hash table](hash_table/README.md)
 - [hash table repeated word](code_challenges/hashmap_repeated_word/README.md)
+- [tree intersection](code_challenges/tree_intersection/README.md)
 
 # Data Structures and Algorithms
 
