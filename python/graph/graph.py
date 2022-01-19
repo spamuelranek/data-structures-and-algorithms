@@ -1,4 +1,5 @@
-from logging import raiseExceptions
+
+from code_challenges.stack_and_queue.queue import Queue
 
 
 class Vertex:
@@ -31,3 +32,24 @@ class Graph:
 
     def size(self):
         return len(self.nodes)
+
+    def breadth_first(self,node):
+
+        if node not in self.nodes:
+            raise KeyError
+        collection_output = []
+        queue = Queue()
+        visited_nodes = set()
+
+        queue.enq(node)
+        visited_nodes.add(node)
+
+        while queue.is_empty() is not True:
+            node_to_check = queue.deq()
+            collection_output.append(node_to_check)
+            for neighbors in node_to_check.neighbors:
+                if neighbors[0] not in visited_nodes:
+                    visited_nodes.add(neighbors[0])
+                    queue.enq(neighbors[0])
+
+        return collection_output
