@@ -1,4 +1,3 @@
-import imp
 from hash_table.hash_table import HashTable
 
 def tree_intersection(tree_one, tree_two):
