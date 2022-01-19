@@ -12,3 +12,17 @@ Create a Graph class that has add_node, add_edge, get_nodes, get_neighbors, size
 
 ## API
 - None
+
+# Breadth First Traversal
+
+## Challenge
+Add a method that takes in a node and returns a collection of nodes based on where they were visited
+
+## Approach & Efficieny
+- Followed the example in the Code Fellows reading.
+- Big O
+    - Time O(n) depending on the number of nodes you have
+    - Space O(n) for the collections that will be made that are the same amount as the number of nodes
+
+## API
+- None
